@@ -14,7 +14,25 @@ const routes = [
     children: [
       {
         path: "/",
-        name: "Dashboard",
+        name: "내정보관리",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/UserManagement"
+          )
+      },
+      {
+        path: "/user-management",
+        name: "회원관리",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/UserManagement"
+          )
+      },
+      {
+        path: "/dashboard",
+        name: "대시보드",
         component: () =>
           import(
             /* webpackChunkName: "views-dashboard" */
@@ -23,7 +41,7 @@ const routes = [
       },
       {
         path: "/grid-system",
-        name: "GridSystem",
+        name: "판매관리",
         component: () =>
           import(
             /* webpackChunkName: "views-grid-system" */
