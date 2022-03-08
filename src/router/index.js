@@ -13,7 +13,7 @@ const routes = [
       ),
     children: [
       {
-        path: "/",
+        path: "/info",
         name: "내정보관리",
         component: () =>
           import(

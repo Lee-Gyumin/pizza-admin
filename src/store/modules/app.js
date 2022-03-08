@@ -2,8 +2,9 @@ const state = {
   drawer: true,
   gradient: "rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)",
   items: [
-    { title: "내정보관리", icon: "mdi-store",  to: "/" },
-    { title: "회원관리", icon: "mdi-account-multiple",  to: "/user-management" },
+    { title: "매장관리", icon: "mdi-store", to: "/" },
+    { title: "내정보관리", icon: "mdi-account-circle-outline", to: "/info" },
+    { title: "회원관리", icon: "mdi-account-multiple", to: "/user-management" },
     { title: "매출관리", icon: "mdi-calculator", to: "/grid-system" },
     { title: "대시보드", icon: "mdi-view-dashboard", to: "/dashboard" },
     { title: "Breakpoints", icon: "mdi-responsive", to: "/breakpoints" },
