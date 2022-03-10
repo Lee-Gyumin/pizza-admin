@@ -13,6 +13,15 @@ const routes = [
       ),
     children: [
       {
+        path: "/",
+        name: "매장관리",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/Store"
+          )
+      },
+      {
         path: "/info",
         name: "내정보관리",
         component: () =>
